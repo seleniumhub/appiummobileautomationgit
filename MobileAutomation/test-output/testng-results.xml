@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="110062" started-at="2019-12-30T14:46:32Z" finished-at="2019-12-30T14:48:22Z">
+  <suite name="Default suite" duration-ms="122546" started-at="2019-12-30T20:16:10Z" finished-at="2019-12-30T20:18:12Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="110062" started-at="2019-12-30T14:46:32Z" finished-at="2019-12-30T14:48:22Z">
+    <test name="Default test" duration-ms="122546" started-at="2019-12-30T20:16:10Z" finished-at="2019-12-30T20:18:12Z">
       <class name="Paytm.MobileAutomation.Testcases.PaytmLoginTest">
-        <test-method status="PASS" signature="AppiumserStart()[pri:0, instance:Paytm.MobileAutomation.Testcases.PaytmLoginTest@9ba398]" name="AppiumserStart" is-config="true" duration-ms="68657" started-at="2019-12-30T20:16:32Z" finished-at="2019-12-30T20:17:40Z">
+        <test-method status="PASS" signature="AppiumserStart()[pri:0, instance:Paytm.MobileAutomation.Testcases.PaytmLoginTest@11fba17]" name="AppiumserStart" is-config="true" duration-ms="65216" started-at="2019-12-31T01:46:10Z" finished-at="2019-12-31T01:47:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AppiumserStart -->
-        <test-method status="FAIL" signature="Login()[pri:0, instance:Paytm.MobileAutomation.Testcases.PaytmLoginTest@9ba398]" name="Login" duration-ms="41345" started-at="2019-12-30T20:17:40Z" finished-at="2019-12-30T20:18:22Z">
+        <test-method status="FAIL" signature="Login()[pri:0, instance:Paytm.MobileAutomation.Testcases.PaytmLoginTest@11fba17]" name="Login" duration-ms="57268" started-at="2019-12-31T01:47:15Z" finished-at="2019-12-31T01:48:12Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Can't locate an element by this strategy: By.chained({By.id: net.one97.paytm:id/et_registered_mobile})]]>
@@ -48,7 +48,7 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@e50104 (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@1814d3 (tried for 1 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:315)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
@@ -80,11 +80,11 @@ Driver info: driver.version: AndroidDriver
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="FAIL" signature="appiumserverStop()[pri:0, instance:Paytm.MobileAutomation.Testcases.PaytmLoginTest@9ba398]" name="appiumserverStop" is-config="true" duration-ms="0" started-at="2019-12-30T20:18:22Z" finished-at="2019-12-30T20:18:22Z">
+        <test-method status="FAIL" signature="appiumserverStop()[pri:0, instance:Paytm.MobileAutomation.Testcases.PaytmLoginTest@11fba17]" name="appiumserverStop" is-config="true" duration-ms="0" started-at="2019-12-31T01:48:12Z" finished-at="2019-12-31T01:48:12Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at Paytm.MobileAutomation.base.paytmBaseClass.appiumserverstop(paytmBaseClass.java:86)
+	at Paytm.MobileAutomation.base.paytmBaseClass.appiumserverstop(paytmBaseClass.java:90)
 	at Paytm.MobileAutomation.Testcases.PaytmLoginTest.appiumserverStop(PaytmLoginTest.java:53)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -116,6 +116,6 @@ Driver info: driver.version: AndroidDriver
           </reporter-output>
         </test-method> <!-- appiumserverStop -->
       </class> <!-- Paytm.MobileAutomation.Testcases.PaytmLoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

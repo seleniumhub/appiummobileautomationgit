@@ -32,7 +32,7 @@ public class paytmBaseClass {
 	
 public 	paytmBaseClass() throws Throwable {
     Properties 	prop = new Properties();
-	FileInputStream ip = new FileInputStream("F://paytm//Paytm-master//MobileAutomation//src//main//java//Paytm//MobileAutomation//config//paytmconfig.properties");
+	FileInputStream ip = new FileInputStream("C:/Users/Admin/git/appiummobileautomationgit/MobileAutomation/src/main/java/Paytm/MobileAutomation/config/paytmconfig.properties");
 	prop.load(ip);
 }
 
@@ -45,14 +45,18 @@ public 	paytmBaseClass() throws Throwable {
 		 cap.setCapability("platformName", "Android");
 		 cap.setCapability("deviceName", "Micromax Q380");
 		 cap.setCapability("udid", "0123456789ABCDEF");
+		 //cap.setCapability("appPackage", "30672ff9 u0 net.one97.paytm");
+		 //cap.setCapability("appActivity", "net.one97.paytm.landingpage.activity.AJRMainActivity");
+		 
 		 cap.setCapability("appPackage", "net.one97.paytm");
-		 cap.setCapability("appActivity", "net.one97.paytm.landingpage.activity.AJRMainActivity");
+		cap.setCapability("appActivity", "net.one97.paytm.landingpage.activity.AJRMainActivity");
 		 cap.setCapability("FullReset", "true");
+		cap.setCapability("adbExecTimeout", "20000");
 		  URL apppiumurl = new URL("http://127.0.0.1:4723/wd/hub");
 		  driver = new AndroidDriver<MobileElement>(apppiumurl,cap);
 		  Thread.sleep(2000);
 	     // driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[1]/android.widget.ListView/android.widget.LinearLayout[1]/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.TextView")).click();
-		 
+		 System.out.println("Application launched");
 	}
 
 	
