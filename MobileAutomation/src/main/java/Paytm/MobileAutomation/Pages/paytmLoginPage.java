@@ -35,9 +35,8 @@ public class paytmLoginPage extends paytmBaseClass {
 public  MobileElement language;
 
 
-@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[1]/android.widget.ListView/android.widget.LinearLayout[8]/android.widget.RelativeLayout")
-public MobileElement continue1;	
-
+@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.Button")
+public MobileElement contunuebutton;
 
 
 @AndroidFindBy(id ="net.one97.paytm:id/login_button")
@@ -52,12 +51,20 @@ public MobileElement Mobile;
 public MobileElement ProceedButton;
 
 	
+@AndroidFindBy(id= "net.one97.paytm:id/login_button")
+public MobileElement loginButton;
+
+@AndroidFindBy(xpath="//android.widget.ImageButton[@content-desc=\"Open navigation drawer\"]")
+public MobileElement navigationDrawer;
+
+@AndroidFindBy(id ="net.one97.paytm:id/ln_name_tv")
+public MobileElement name;
 
 
 public void paytmlogin() throws InterruptedException 
 {
 	System.out.println("Login TestCases");
-	Thread.sleep(2000);
+	Thread.sleep(20000);
 	language.click();
 	//WebDriverWait wait=new WebDriverWait(driver, 50);
 // wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[1]/android.widget.ListView/android.widget.LinearLayout[1]/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.TextView")));
@@ -68,11 +75,18 @@ public void paytmlogin() throws InterruptedException
 	//System.out.println("Launguage Selected Successfully" + S1);
 	
 	System.out.println("clicked on selected language");
-	continue1.click();
+	contunuebutton.click();
+	Thread.sleep(2000);
+	loginButton.click();
 	Thread.sleep(2000);
 	Mobile.sendKeys("8744940399");
 	Thread.sleep(2000);
 	ProceedButton.click();
+	Thread.sleep(200000);
+	navigationDrawer.click();
+	Thread.sleep(2000);
+String s1 = name.getText();
+System.out.println(s1);
 	
 	
 	

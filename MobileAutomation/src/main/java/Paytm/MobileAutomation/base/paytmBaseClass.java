@@ -32,7 +32,7 @@ public class paytmBaseClass {
 	
 public 	paytmBaseClass() throws Throwable {
     Properties 	prop = new Properties();
-	FileInputStream ip = new FileInputStream("C:/Users/Admin/git/appiummobileautomationgit/MobileAutomation/src/main/java/Paytm/MobileAutomation/config/paytmconfig.properties");
+	FileInputStream ip = new FileInputStream("C:\\Users\\himanshuagrawal\\git\\appiummobileautomationgit\\MobileAutomation\\src\\main\\java\\Paytm\\MobileAutomation\\config\\paytmconfig.properties");
 	prop.load(ip);
 }
 

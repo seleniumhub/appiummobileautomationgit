@@ -10,7 +10,6 @@
         <methods>
           <include name="AppiumserStart"/>
           <include name="Login"/>
-          <include name="appiumserverStop"/>
         </methods>
       </class> <!-- Paytm.MobileAutomation.Testcases.PaytmLoginTest -->
     </classes>
