@@ -52,6 +52,8 @@ public 	paytmBaseClass() throws Throwable {
 		cap.setCapability("appActivity", "net.one97.paytm.landingpage.activity.AJRMainActivity");
 		 cap.setCapability("FullReset", "true");
 		cap.setCapability("adbExecTimeout", "20000");
+		cap.setCapability("newCommandTimeout", "20000");
+		
 		  URL apppiumurl = new URL("http://127.0.0.1:4723/wd/hub");
 		  driver = new AndroidDriver<MobileElement>(apppiumurl,cap);
 		  Thread.sleep(2000);

@@ -76,7 +76,7 @@ public void paytmlogin() throws InterruptedException
 	
 	System.out.println("clicked on selected language");
 	contunuebutton.click();
-	Thread.sleep(2000);
+	Thread.sleep(20000);
 	loginButton.click();
 	Thread.sleep(2000);
 	Mobile.sendKeys("8744940399");
